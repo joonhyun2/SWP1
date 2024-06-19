@@ -7,7 +7,7 @@ def application(environ, start_response):
     response_body = '\n'.join(response_body)
     status = '200 OK'
     response_headers = [
-        ('Content-Type', 'text/plain'),
+        ('Content-Type', 'text/plain'), 
         ('Content-Length', str(len(response_body)))
     ]
     
